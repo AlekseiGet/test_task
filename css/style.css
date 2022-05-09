@@ -275,14 +275,16 @@ body {
   padding: 20px;
 }
 
-.slider__token__item {
+.slider__token__conteiner div {
   width: 10em;
-  height: 10em;
+  height: auto;
   margin: 10px 0px;
+  padding: 5px;
   background: rgba(0, 0, 0, 0.76);
   border: 1px solid black;
   border-radius: 15px;
   position: relative;
+  overflow: hidden;
 }
 
 .app__slider__rocket {
