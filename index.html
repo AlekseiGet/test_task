@@ -48,7 +48,8 @@
           <div class="app__navbar__part__logo logo">
             <img src="imj/logo.png" alt="upss">
           </div>
-          <form action="https://api.expandingspace.io/beta/Tokens?page=&limit=&order=&query=" method="get">
+          <form class="danstyle" id="form" target="_self" name="main"
+            action="#" method="get">
             <div class="navbar__part__auth">
               <div class="navbar__part__auth__search search">
                 <input tabindex="1" placeholder="&#128269  search by token name or address" type="text" name="username"
@@ -57,12 +58,12 @@
               </div>
               <div class="navbar__part__auth__bar search">
                 <option value="Token type">Token type</option>
-                <br /> <input tabindex="1" checked type="checkbox" name="Donate" value="" />Donate
-                <br /> <input tabindex="2" checked type="checkbox" name="Business" value="" />Business
-                <br /> <input tabindex="3" checked type="checkbox" name="Startup" value="" />Startup
-                <br /> <input tabindex="4" checked type="checkbox" name="Trade" value="" />Trade
-                <br /> <input tabindex="5" checked type="checkbox" name="Nft" value="" />Nft
-                <br /> <input tabindex="6" checked type="checkbox" name="Dao" value="" />Dao
+                <br /> <input tabindex="1" title="id_ip" checked type="radio" name="token_sort" value="id_ip" />id_ip
+                <br /> <input tabindex="1" title="id_down" type="radio" name="token_sort" value="id_down" />id_down
+                <br /> <input tabindex="2" title="name_up" type="radio" name="token_sort" value="name_up" />name_up
+                <br /> <input tabindex="3" title="name_down" type="radio" name="token_sort"
+                  value="name_down" />name_down
+                
               </div>
             </div>
           </form>
@@ -73,61 +74,7 @@
               <img src="imj/galaxy_launch.svg" alt="upss">
             </div>
             <div class="slider__token__conteiner">
-              <div class="slider__token__item">
-                информация о токене
-              </div>
-              <div class="slider__token__item">
-                информация о токене
-              </div>
-              <div class="slider__token__item">
-                информация о токене
-              </div>
-              <div class="slider__token__item">
-                информация о токене
-              </div>
-              <div class="slider__token__item">
-                информация о токене
-              </div>
-              <div class="slider__token__item"></div>
-              <div class="slider__token__item"></div>
-              <div class="slider__token__item"></div>
-              <div class="slider__token__item"></div>
-              <div class="slider__token__item"></div>
-              <div class="slider__token__item"></div>
-              <div class="slider__token__item"></div>
-              <div class="slider__token__item"></div>
-              <div class="slider__token__item"></div>
-              <div class="slider__token__item"></div>
-              <div class="slider__token__item"></div>
-              <div class="slider__token__item"></div>
-              <div class="slider__token__item"></div>
-              <div class="slider__token__item"></div>
-              <div class="slider__token__item"></div>
-              <div class="slider__token__item"></div>
-              <div class="slider__token__item"></div>
-              <div class="slider__token__item"></div>
-              <div class="slider__token__item"></div>
-              <div class="slider__token__item"></div>
-              <div class="slider__token__item"></div>
-              <div class="slider__token__item"></div>
-              <div class="slider__token__item"></div>
-              <div class="slider__token__item"></div>
-              <div class="slider__token__item"></div>
-              <div class="slider__token__item"></div>
-              <div class="slider__token__item"></div>
-              <div class="slider__token__item"></div>
-              <div class="slider__token__item"></div>
-              <div class="slider__token__item"></div>
-              <div class="slider__token__item"></div>
-              <div class="slider__token__item"></div>
-              <div class="slider__token__item"></div>
-              <div class="slider__token__item"></div>
-              <div class="slider__token__item"></div>
-              <div class="slider__token__item"></div>
-              <div class="slider__token__item"></div>
-              <div class="slider__token__item"></div>
-              <div class="slider__token__item"></div>
-              <div class="slider__token__item"></div>
+            
             </div>
           </div>
         </div>
@@ -201,9 +148,10 @@
       </div>
     </div>
   </div>
-
-  <script src="js/script.js">
-  </script>
+  
+ <script src="js/script.js">
+ </script>
+ 
 </body>
 
 </html>
