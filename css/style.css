@@ -208,10 +208,18 @@ body {
   border-radius: 15px;
 }
 
+.search_imegn {
+  margin-top: -5px;
+  font-size: 30px;
+}
+
 .navbar__part__auth__search {
   position: absolute;
   top: 0px;
   right: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .navbar__part__auth__search input {
@@ -277,7 +285,7 @@ body {
 
 .slider__token__conteiner div {
   width: 10em;
-  height: auto;
+  height: 10em;
   margin: 10px 0px;
   padding: 5px;
   background: rgba(0, 0, 0, 0.76);
