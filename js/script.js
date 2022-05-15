@@ -65,7 +65,7 @@ function searchUser(url) {
           // Перебирайте все элементы списка и скрывайте те, которые не соответствуют поисковому запросу
           for (let i = 0; i < li.length; i++) {
               let a = li[i];              
-              if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+              if (a.innerHTML.toUpperCase().indexOf(filter) > 0) {
                   li[i].style.display = "block";
                   searchBox.style.border = "1px solid rgb(255, 255, 255)";
 
