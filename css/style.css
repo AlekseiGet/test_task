@@ -238,7 +238,7 @@ body {
 }
 
 .search_box_item::before {
-  background-image: url(/imj/logo.png);
+  background-image: url(imj/logo.png);
   background-size: contain;
   background-repeat: no-repeat;
   display: inline-block;
