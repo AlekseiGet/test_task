@@ -19,7 +19,24 @@ function loadData(url) {
                 let description = duble['description'].slice(0, 27);
                 let owner = duble['owner'].slice(0, 13);
                 let tokenItem = JSON.stringify(`Name: ${duble['name']}`);
-                const picture = `${duble['image'].uri}`;
+                 const pictureAdress = `${duble['image'].uri}`;
+//console.log(pictureAdress);
+
+const normalizeUrl = (checkAdress) => {
+            if (checkAdress.startsWith('https://')) {
+                return checkAdress;
+            } else if (checkAdress.startsWith('http://')) {
+           checkAdress = checkAdress.replace('http://', 'https://')
+                return  checkAdress;
+            }
+        };
+
+        const picture = normalizeUrl(pictureAdress);
+        console.log(picture);
+                
+                
+                
+              //  const picture = `${duble['image'].uri}`;
 
                 const subListNoAll = document.querySelector(".slider__token__conteiner");
                 const newNodaConteiner = document.createElement('div');
