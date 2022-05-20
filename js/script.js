@@ -35,7 +35,7 @@ const normalizeUrl = (checkAdress) => {
             if (checkAdress.startsWith('https://')) {
                 return checkAdress;
             } else if (checkAdress.startsWith('http://')) {
-           checkAdress = checkAdress.replace('http://', 'https://')
+           checkAdress = checkAdress.replace('http://', 'HTTPS://')
                 return  checkAdress;
             }
         };
