@@ -64,7 +64,7 @@ function searchUser(tokenSort) {
     for (let i = 0; i < tokenSort.length; i++) {
         let duble = tokenSort[i];
         const picture = `${duble['image'].uri}`;
-        const tokenText = JSON.stringify(`<img src='${picture}' alt="upss"> <a target="blank" href="https://www.google.com"> ${duble['name']} </a>`);
+        const tokenText = JSON.stringify(`<img src='${picture}' alt="upss"> <a target="blank" href=""> ${duble['name']} </a>`);
         let tokenItem = delLetter(tokenText, '"');
 
         const newElement = document.createElement('div');
