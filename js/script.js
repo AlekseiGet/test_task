@@ -29,7 +29,7 @@ function tokenKraft(tokenSort) {
         const tokenText = JSON.stringify(`${duble['collection'].name} <br/> <i> Name :</i> ${duble['name']} <br/> <i>Create_date :</i> ${duble['image'].create_date} `);
         let tokenItem = delLetter(tokenText, '"')
         const pictureAdress = `${duble['image'].uri}`;
-console.log(pictureAdress);
+//console.log(pictureAdress);
 
 const normalizeUrl = (checkAdress) => {
             if (checkAdress.startsWith('https://')) {
