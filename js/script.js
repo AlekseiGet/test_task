@@ -28,8 +28,8 @@ function tokenKraft(tokenSort) {
         let duble = tokenSort[i];
         const tokenText = JSON.stringify(`${duble['collection'].name} <br/> <i> Name :</i> ${duble['name']} <br/> <i>Create_date :</i> ${duble['image'].create_date} `);
         let tokenItem = delLetter(tokenText, '"')
-        const pictureUrl = `${duble['image'].uri}`; //Адрес из URL http (не сертефицированый - не открывает гит)
-        const picture = pictureUrl.replace('http://data1.expandingspace.io/files/', 'imj/cardFace/'); // Переделал адрес на локальную папку куда скачал
+        const picture = `${duble['image'].uri}`; //Адрес из URL http (не сертефицированый - не открывает гит)
+        const pictureAlt = pictureUrl.replace('http://data1.expandingspace.io/files/', 'imj/cardFace/'); // Переделал адрес на локальную папку куда скачал
 
         const subListNoAll = document.querySelector(".slider__token__conteiner");
         const newNodaConteiner = document.createElement('div');
@@ -39,7 +39,7 @@ function tokenKraft(tokenSort) {
         const subListNodaConteiner = document.querySelectorAll(".noda_conteiner")[i];
 
         const newElement = document.createElement('div');
-        newElement.insertAdjacentHTML('afterbegin', `<img src='${picture}' alt="upss"> <p>${tokenItem}</p> `);
+        newElement.insertAdjacentHTML('afterbegin', `<img src='${picture}' srcset='${pictureAlt}' alt="upss"> <p>${tokenItem}</p> `);
         newElement.classList.add(`noda`);
         subListNodaConteiner.append(newElement);
     }
