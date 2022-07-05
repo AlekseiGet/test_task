@@ -208,7 +208,7 @@ skrollKonteiner.addEventListener('scroll',
 );
 
 function trotle(itemParent, itemChaild) {
-    if (itemChaild <= itemParent + 100) { //на коком расстоянии от низа сработает
+    if (itemChaild <= itemParent + 100) { //на кaком расстоянии от низа сработает
         loadData(url); //цель для чего 
         quantity += 8;
         console.log("Загрузка");
